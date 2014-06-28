@@ -69,8 +69,7 @@ deps:  venv dep_requirements
 
 
 dep_install:
-	apt-get install build-essential swig libpq-dev python-dev libmysqlclient-dev python-pip libmysqlclient-dev zip
-	pip install virtualenv
+	apt-get install -y build-essential swig libpq-dev python-dev libmysqlclient-dev python-pip libmysqlclient-dev zip libssl-dev python-virtualenv
 
 dep_requirements:
 	@echo "\n\nSilently installing packages (this will take a while)..."
